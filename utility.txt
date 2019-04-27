@@ -1,0 +1,22 @@
+useful classes:
+
+bg-dark,bg-primary ...
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+
+text-primary/warning ... for text colors
+
+justify-content-center
+
+Center Align
+ .mx-auto class (adds margin-left and margin-right: auto):
+
+
+ font-weight-bold
+ font-weight-lighter
+ font-italic
+
+ text-center /justify

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="appstyle.css">
+   <link rel="stylesheet" href="login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="header navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" alt="Logo" style="width:40px;">
+  </a>
+  <a class="navbar-brand" href="#">IntelliQ</a>
+
+</nav>
+
+
+<div class="main-login container">
+ 
+
+<!-- LOGIN CARD -->
+<div class="card login-card mb-1">
+  
+  <div class="card-header bg-dark text-white text-center">
+  	<h3>Login to IntelliQ</h3>
+  </div>
+  
+  <div class="card-body">
+   <form action="roles.html" >
+	  <div class="form-group">
+	    <label for="mobile">Mobile:</label>
+	    <input type="text" class="form-control" name="mobile" id="mobile" >
+	    <div class="text-danger">Please fill out this field.</div>
+	  </div>
+	  <div class="form-group">
+	    <label for="pwd">Password:</label>
+	    <input type="password" class="form-control" name="pwd"  id="pwd">
+	  </div>
+	   <button type="submit" class="btn btn-primary btn-block">Login</button>
+</form>
+
+  </div> 
+  
+  <div class="card-footer text-dark font-weight-lighter
+ 	font-italic" style="border: 2px;color: blue"> <a class="nav-link" href="#">Forgot Password ?</a>
+ </div>
+
+</div>
+
+<!-- FORGOT PWD CARD -->
+<div class="card login-card mb-1" hidden="">
+  
+  <div class="card-header bg-dark text-white text-center">
+  	<h3>Forgot Password ?</h3>
+  </div>
+  
+  <div class="card-body">
+   <form >
+	  <div class="form-group">
+	    <label for="fmobile">Mobile:</label>
+	    <input type="text" class="form-control" name="fmobile" id="fmobile">
+	  </div>
+	  <div class="form-group" hidden>
+	    <label for="otp">OTP:</label>
+	    <input type="text" class="form-control" name="otp" id="otp" maxlength="6">
+	 </div>
+	  <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">Get OTP</button>
+</form>
+
+  </div> 
+  
+  <div class="card-footer text-dark font-weight-lighter
+ 	font-italic" style="border: 2px;"> OTP will be sent to your registered mobile number
+ </div>
+ 
+</div>
+
+ <div class="modal fade" id="myModal" >
+    <div class="modal-dialog modal-lg modal-dialog-centered rounded-lg">
+      <div class="modal-content otp-box" >
+         <!-- Modal body -->
+        <div class="modal-body mx-auto">
+          <span class="text-center text-white font-weight-lighter font-italic"><h3>OTP</h3></span>
+		      	<form class="form-inline " >
+				  
+				  <div class="form-group font-weight-bold">
+				   <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+ 				   <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+          
+
+ 			  	  </div>
+				 
+			</form>
+      <span class="text-center text-danger"><h6>*All fields are required</h6></span>
+			
+    </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<!-- FOOTER -->
+<nav class="footer-bg navbar navbar-expand-sm  navbar-dark fixed-bottom justify-content-center">
+  <a class="navbar-brand" href="#"><h5 class="font-weight-lighter font-italic text-dark">Handcrafted By Moltres</h5></a>
+</nav>
+
+</body>
+</html>

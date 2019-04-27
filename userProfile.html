@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="appstyle.css">
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="header navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" alt="Logo" style="width:40px;">
+  </a>
+  <a class="navbar-brand" href="home.html">IntelliQ</a>
+ <div class="navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item mx-5">
+        <a class="nav-link" href="roles.html">My Roles</a>
+      </li>
+    
+    </ul>
+   
+
+    <ul class="navbar-nav">
+     
+      <li class="nav-item mx-5 dropdown">
+        <a class="nav-link dropdown-toggle active" href="#"  data-toggle="dropdown">Hi Raghav Aneja</a>
+
+        <div class="dropdown-menu shadow p-1 mb-1 ">
+          <a class="dropdown-item" href="userProfile.html">My Profile</a>
+            <a class="dropdown-item" href="schoolProfile.html">School Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="login.html">Logout</a>
+       </div>
+      </li>
+      
+    </ul>
+
+   </div>
+</nav>
+
+
+<div class="main-content container-fluid">
+
+  <div class="row">
+      
+      <div class="col-md-3 offset-md-1">
+        
+            <div class="card profile-card">
+                 <section class="icon-holder rounded-circle text-center mx-auto">
+                    <i class="fas fa-user fa-5x mx-auto p-3"></i>
+                 </section>
+                 <div class="card-body text-white font-weight-lighter font-italic">
+                    <span><i class="fas fa-user p-2 text-warning"></i>raghav@aneja_06</span><br/>
+                    <span><i class="fas fa-pencil-alt p-2 text-warning"></i>Raghav Aneja</span><br/>
+                    <span><i class="fas fa-phone p-2 text-warning"></i>8754538506</span><br/>
+                    <span><i class="fas fa-envelope p-2 text-warning"></i>raneja7@gmail.com</span><br/>
+                    <span><i class="fas fa-venus p-2 text-warning"></i>Male, 26 years</span>
+
+                    <hr style="border: 2px solid #e9ecf3;">
+                    
+                    <div class="text-white" style="font-size: 20px">
+                     <span class="badge bg-success mr-1">
+                        Reviewer
+                     </span>
+                     <span class="badge bg-success mr-1">
+                       Teacher
+                     </span>
+                     <span class="badge bg-success mr-1">
+                       School Admin
+                     </span>
+                   </div>
+
+                 </div>
+             </div>
+      </div>
+
+
+      <div class="col-md-7">
+        <div class="card profile-card">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active text-white" data-toggle="tab" href="#bio">Bio</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" data-toggle="tab" href="#mobile">Mobile</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" data-toggle="tab" href="#password">Password</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" data-toggle="tab" href="#reviews">Reviews</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-white" data-toggle="tab" href="#teaches">Teaches</a>
+            </li>
+       
+          </ul>
+          <div class="tab-content profile-tab">
+              <div id="bio" class="container tab-pane active">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                       <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                               <i class="fas fa-user mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                                 <i class="fas fa-user mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+
+                         <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                                 <i class="fas fa-mars mx-auto"></i>
+                            </span>
+                          </div>
+                          <select class="form-control custom-select" >
+                            <option disabled>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+
+                        </div>
+
+                         <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                           <span class="input-group-text bg-dark text-white">
+                                 <i class="fas fa-calendar-alt mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="date" class="form-control" title="DOB" placeholder="DOB">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-warning btn-block text-white">Update</button>
+                      </form>
+                    </div>
+                </div>
+              </div>
+
+              <div id="mobile" class="container tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                       <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                               <i class="fas fa-mobile-alt mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" readonly="" placeholder="Old Mobile">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                                 <i class="fas fa-mobile-alt mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="New Mobile">
+                        </div>
+                        <button type="button" class="btn btn-warning btn-block text-white" data-toggle="modal" data-target="#myModal">Get OTP</button> 
+                      </form>
+                    </div>
+                </div>  
+             </div>
+    
+              <div id="password" class="container tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                       <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                               <i class="fas fa-unlock mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Old Password">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                                 <i class="fas fa-lock mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="New Password">
+                        </div>
+                         <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark text-white">
+                               <i class="fas fa-lock mx-auto"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block text-white">Update</button> 
+                      </form>
+                    </div>
+                </div>  
+              </div>
+           
+              <div id="reviews" class="container tab-pane fade">
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table class="table table-dark table-hover rounded-lg">
+                          <thead style="color: #ffc107">
+                            <tr>
+                              <th>Standard</th>
+                              <th>Subjects</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>3</td>
+                              <td>Mathematics , Environmental Science , Science</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Mathematics , Science</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Environmental Sciene , Science</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+           
+              <div id="teaches" class="container tab-pane fade">
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table class="table table-dark table-hover rounded-lg">
+                          <thead style="color: #ffc107">
+                            <tr>
+                              <th>Standard</th>
+                              <th>Subjects</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>4</td>
+                              <td>Mathematics , Science</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Environmental Sciene , Science</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+         </div>
+      </div>
+
+  </div>
+
+
+ <div class="modal fade" id="myModal" >
+    <div class="modal-dialog modal-lg modal-dialog-centered rounded-lg">
+      <div class="modal-content otp-box" >
+         <!-- Modal body -->
+        <div class="modal-body mx-auto">
+          <span class="text-center text-white font-weight-lighter font-italic"><h5>OTP</h5></span>
+           <form class="form-inline " >
+          
+          <div class="form-group font-weight-bold">
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+           <input type="text" maxlength="1" class="border-otp  font-weight-bold  text-center"/>
+         </div>
+         
+      </form>
+      <span class="text-center text-danger" hidden=""><h6>*All fields are required</h6></span>
+      
+    </div>
+        
+        
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+</body>
+</html>
