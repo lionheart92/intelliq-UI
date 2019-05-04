@@ -1,0 +1,24 @@
+
+.table{
+	font-size: 80%;
+}
+
+.table-input{
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin-left: 10px;
+	padding: 0px;
+	text-align: center;
+	width: 100px;
+	
+}
+
+.col-day{
+	color: #007BFF;
+}
+
+.fa-save{
+	color: #f19066;
+}

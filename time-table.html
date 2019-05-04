@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="appstyle.css">
+	<link rel="stylesheet" href="time-table.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<nav class="header navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">
+			<img src="images/logo.png" alt="Logo" style="width:40px;">
+		</a>
+		<a class="navbar-brand" href="home.html">IntelliQ</a>
+
+
+		<div class="navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item mx-5">
+					<a class="nav-link" href="roles.html">My Roles</a>
+				</li>
+				<span class="navbar-text text-warning">
+					TEACHER
+				</span>
+			</ul>
+
+
+			<ul class="navbar-nav">
+
+				<li class="nav-item mx-5 dropdown">
+					<a class="nav-link dropdown-toggle active" href="#"  data-toggle="dropdown">Hi Raghav Aneja</a>
+
+					<div class="dropdown-menu shadow p-1 mb-1 ">
+						<a class="dropdown-item" href="userProfile.html">My Profile</a>
+						<a class="dropdown-item" href="schoolProfile.html">School Profile</a> 
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="login.html">Logout</a>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+	</nav>
+
+	<!-- CONTENT -->
+	<div class="main-content container-fluid">
+		<div class="row mt-3">
+			<div class="table-responsive ml-5 mr-5">
+				<table class="table table-striped table-dark table-hover rounded-lg">
+					<thead style="color: #ffc107;font-style: italic;" class="text-center">
+						<tr>
+							<th>
+								<span data-balloon="Save Table" data-balloon-pos="right">
+									<i class="fas fa-save"></i>
+								</span>
+							</th>
+							<th><span>1</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>2</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>3</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>4</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>5</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>6</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>7</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>8</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+							<th><span>9</span><br><span class="text-success"> (8:30 am - 9:20 am)</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center col-day">Mon</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="text-center col-day">Tue</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="20"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td class="text-center col-day">Wed</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td class="text-center col-day">Thu</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td class="text-center col-day">Fri</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="text-center col-day">Sat</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td >
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+							<td>
+								<span><input type="text" class="table-input"  placeholder="subject" maxlength="15"></span>
+								<span><input type="text" class="table-input"  placeholder="class-sec" maxlength="5"></span>
+							</td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
