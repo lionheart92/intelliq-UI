@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="appstyle.css">
+  <link rel="stylesheet" href="feature-addQuestion.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="header navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" style="width:40px;">
+    </a>
+    <a class="navbar-brand" href="home.html">IntelliQ</a>
+
+
+    <div class="navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mx-5">
+          <a class="nav-link" href="roles.html">My Roles</a>
+        </li>
+        <span class="navbar-text text-warning">
+          TEACHER
+        </span>
+      </ul>
+
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item mx-5 dropdown">
+          <a class="nav-link dropdown-toggle active" href="#"  data-toggle="dropdown">Hi Raghav Aneja</a>
+
+          <div class="dropdown-menu shadow p-1 mb-1 ">
+            <a class="dropdown-item" href="userProfile.html">My Profile</a>
+            <a class="dropdown-item" href="schoolProfile.html">School Profile</a> 
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.html">Logout</a>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- SIDE NAV -->
+  <div class="sidenav text-white">
+    <a class="btn btn-dark" href="#">View Questions</a>
+    <a class="btn btn-dark" href="#">View Requests</a>
+    <a class="btn btn-dark" href="#">Add Question</a>
+    <a class="btn btn-dark" href="#">Generate Question Paper</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="main-content container-fluid">
+    <div class="feature-content">
+     <form class="scrollable">
+
+      <div class="row">
+
+       <div class="offset-md-1 col-md-4">
+        <div class="form-group">
+          <label for="std">Standard:</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+               <i class="fas fa-graduation-cap"></i>
+             </span>
+           </div>
+           <select class="form-control custom-select" id="std" >
+            <option disabled>Select Standard</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="offset-md-1 col-md-4">
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+             <i class="fas fa-book"></i>
+           </span>
+         </div>
+         <select class="form-control custom-select" id="subject" >
+          <option disabled>Select Subject</option>
+          <option>Science</option>
+          <option>Mathematics</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="offset-md-1 col-md-4">     
+   <div class="form-group">
+    <label for="section">Section:</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="fas fa-box"></i>
+       </span>
+     </div>
+     <select class="form-control custom-select" id="section" >
+      <option disabled>Select Section</option>
+      <option>Objective</option>
+      <option>Short</option>
+      <option>Brief</option>
+      <option>Long</option>
+    </select>
+  </div>
+</div>
+
+</div>
+
+<div class="offset-md-1 col-md-4">
+
+ <div class="form-group">
+  <label for="difficulty">Difficulty:</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+       <i class="fas fa-book"></i>
+     </span>
+   </div>
+   <select class="form-control custom-select" id="difficulty" >
+    <option disabled>Select Difficulty</option>
+    <option>Easy</option>
+    <option>Medium</option>
+    <option>Hard</option>
+  </select>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+ <div class="offset-md-1 col-md-4">
+   <div class="form-group">
+    <label for="chapter">Chapter:</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="fas fa-bookmark"></i>
+       </span>
+     </div>
+     <input type="text" class="form-control" placeholder="Chapter" id="chapter">
+   </div>
+ </div>
+ 
+</div>
+
+<div class="offset-md-1 col-md-4">
+ <div class="form-group">
+  <label for="topics">Topics:</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+       <i class="far fa-bookmark"></i>
+     </span>
+   </div>
+   <input type="text" class="form-control" placeholder="Topics" id="topics">
+ </div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+ <div class="offset-md-1 col-md-4">
+   <div class="form-group">
+    <label for="reviewer">Reviewer:</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="fas fa-eye"></i>
+       </span>
+     </div>
+     <input type="text" class="form-control" value="raghav@aneja_06" readonly="" id="reviewer">
+   </div>
+ </div>
+ 
+</div>
+
+<div class="offset-md-1 col-md-4">
+  <div class="form-group">
+    <label for="myFile">Image:</label><br>
+    <input type="file" id="myFile" name="filename2" class="img-upload-box">
+  </div>
+</div>
+
+</div>
+
+<div class="row">
+
+  <div class="offset-md-1 col-md-5">
+   <div class="form-group">
+    <label for="description">Description:</label>
+    <a href="#editorModal" data-toggle="modal"> <span class="badge bg-modify text-white ml-2">Show Math Editor</span></a>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="far fa-clipboard"></i>
+       </span>
+     </div>
+     <textarea class="form-control" id="description" rows="4" placeholder="Question Description"></textarea>
+   </div>
+ </div>
+ <div class="form-inline mt-5">
+   <button class="btn bg-primary text-white mr-4" style="width: 150px">Add</button>
+   <button class="btn btn-warning text-white" style="width: 150px">Reset</button>
+ </div>
+</div>
+
+<!-- Question Suggestions -->
+<div class="col-md-5">
+  <div class="table-responsive question-suggestion-area" >
+    <table class="table table-dark table-hover table-striped rounded-lg">
+     <thead style="color: #ffc107;font-style: italic;" class="text-center">
+      <tr>
+        <th>Similar Added Questions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="question-description-area">
+            Recall the most diffuclt question you have ever been asked
+            in your life and assume that I have asked the same in detail
+            with relevant examples ? Recall the most diffuclt question you have ever been asked
+            in your life and assume that I have asked the same in detail
+            with relevant examples ?
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="question-description-area">
+            Recall the most diffuclt question you have ever been asked
+            in your life and assume that I have asked the same in detail
+            with relevant examples ?
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="question-description-area">
+            Recall the most diffuclt question you have ever been asked
+            in your life and assume that I have asked the same in detail
+            with relevant examples ? Recall the most diffuclt question you have ever been asked
+            in your life and assume that I have asked the same in detail
+            with relevant examples ?
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+</div>
+
+</form>
+</div>
+
+</div>
+
+
+<!-- IMAGE MODEL -->
+<div class="modal fade" id="editorModal">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content editorModalBox" >
+     <!-- Modal body -->
+     <div class="modal-body">
+       <div class="card editor-body text-center">
+        <div class="card-body">
+         <i class="fas fa-edit fa-7x text-white"></i>
+       </div> 
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+</div>
+
+
+</body>
+</html>

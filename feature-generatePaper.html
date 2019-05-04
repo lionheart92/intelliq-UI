@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="appstyle.css">
+  <link rel="stylesheet" href="feature-generatePaper.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="header navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" style="width:40px;">
+    </a>
+    <a class="navbar-brand" href="home.html">IntelliQ</a>
+
+
+    <div class="navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mx-5">
+          <a class="nav-link" href="roles.html">My Roles</a>
+        </li>
+        <span class="navbar-text text-warning">
+          TEACHER
+        </span>
+      </ul>
+
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item mx-5 dropdown">
+          <a class="nav-link dropdown-toggle active" href="#"  data-toggle="dropdown">Hi Raghav Aneja</a>
+
+          <div class="dropdown-menu shadow p-1 mb-1 ">
+            <a class="dropdown-item" href="userProfile.html">My Profile</a>
+            <a class="dropdown-item" href="schoolProfile.html">School Profile</a> 
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.html">Logout</a>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- SIDE NAV -->
+  <div class="sidenav text-white">
+    <a class="btn btn-dark" href="#">View Questions</a>
+    <a class="btn btn-dark" href="#">View Requests</a>
+    <a class="btn btn-dark" href="#">Add Question</a>
+    <a class="btn btn-dark" href="#">Generate Question Paper</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="main-content container-fluid">
+    <div class="feature-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card feature-card">
+
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active text-white" data-toggle="tab" href="#criteria">Criteria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" data-toggle="tab" href="#edit">Edit Paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" data-toggle="tab" href="#view">View Paper</a>
+              </li>
+            </ul>
+
+            <div class="tab-content feature-tab">
+              <div id="criteria" class="tab-pane active">
+                <div class="row mt-3">
+                 <div class="offset-md-1 col-md-2">
+                  <a class="badge badge-pill btn-warning p-2" data-balloon="Reset Form" data-balloon-pos="left">
+               <i class="fas fa-redo-alt text-white"></i>
+             </a>
+               </div>
+               <div class="offset-md-1 col-md-6">
+                <div class="form-group form-inline">
+                  <label for="templates">Saved Templates:</label>
+                  <div class="input-group ml-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                       <i class="fas fa-graduation-cap"></i>
+                     </span>
+                   </div>
+                   <select class="form-control custom-select" id="templates" >
+                    <option disabled>Select Template</option>
+                    <option>Template 1</option>
+                    <option>Template 2</option>  
+                    <option>Template 3</option>
+                    <option>Template 4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+             <a class="badge badge-pill btn-danger p-2" data-balloon="Remove Template" data-balloon-pos="left">
+               <i class="fas fa-trash-alt text-white"></i>
+             </a>
+           </div>
+         </div>
+         <hr>
+         <form>
+
+          <div class="row">
+
+           <div class="offset-md-1 col-md-4">
+            <div class="form-group">
+              <label for="std">Standard:</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                   <i class="fas fa-graduation-cap"></i>
+                 </span>
+               </div>
+               <select class="form-control custom-select" id="std" >
+                <option disabled>Select Standard</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="offset-md-1 col-md-4">
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                 <i class="fas fa-book"></i>
+               </span>
+             </div>
+             <select class="form-control custom-select" id="subject" >
+              <option disabled>Select Subject</option>
+              <option>Science</option>
+              <option>Mathematics</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-md-1 col-md-4">     
+       <div class="form-group">
+        <label for="sets">Sets:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+             <i class="fas fa-box"></i>
+           </span>
+         </div>
+         <select class="form-control custom-select" id="sets" >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="offset-md-1 col-md-4">
+   <div class="form-group">
+    <label for="total">Total marks:</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="fas fa-box"></i>
+       </span>
+     </div>
+     <input type="number" class="form-control" id="total" placeholder="Marks" min="0">
+   </div>
+ </div>
+
+</div>
+</div>
+
+<div class="row">
+ <div class="offset-md-1 col-md-4">
+   <div class="form-group">
+    <label for="chapters">Chapters:</label>
+    <div class="input-group mb-3">  
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+         <i class="fas fa-bookmark"></i>
+       </span>
+     </div>
+     <select class="form-control custom-select" id="chapters" >
+      <option>Chapter 1</option>
+      <option>Chapter 2</option>
+      <option>Chapter 3</option>
+      <option>Chapter 4</option>
+      <option>Chapter 5</option>
+    </select>
+  </div>
+</div>
+
+</div>
+
+<div class="offset-md-1 col-md-5 mt-3 text-white scroll-control">
+
+  <span class="badge bg-dark">Chapter 1 &times;</span>
+  <span class="badge bg-dark">Chapter 2 &times;</span>
+  <span class="badge bg-dark">Chapter 3 &times;</span>
+
+</div>
+</div>
+
+<div class="row">
+
+ <div class="offset-md-1 col-md-4">
+   <div class="form-group">
+    <label for="section">Sections:</label>
+    <div>
+      <div class="custom-control custom-checkbox  custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="objectiveCheck" name="objective">
+        <label class="custom-control-label" for="objectiveCheck">Objective</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="shortCheck" name="short">
+        <label class="custom-control-label" for="shortCheck">Short</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="briefCheck" name="brief">
+        <label class="custom-control-label" for="briefCheck">Brief</label>
+      </div>
+      <div class="custom-control custom-checkbox  custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="longCheck" name="long">
+        <label class="custom-control-label" for="longCheck">Long</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="offset-md-1 col-md-4">
+ <div class="form-group">
+  <label for="difficulty">Difficulty:</label>
+  <div>
+    <div class="custom-control custom-checkbox  custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="easyCheck" name="easy">
+      <label class="custom-control-label" for="easyCheck">Easy</label>
+    </div>
+    <div class="custom-control custom-checkbox  custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="mediumCheck" name="medium">
+      <label class="custom-control-label" for="mediumCheck">Medium</label>
+    </div>
+    <div class="custom-control custom-checkbox  custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="hardCheck" name="hard">
+      <label class="custom-control-label" for="hardCheck">Hard</label>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+ <!-- SECTION INPUT -->
+ <div class="offset-md-1 col-md-4">
+   <div class="table-responsive">
+    <table class="table table-dark table-hover rounded-lg">
+     <thead style="color: #ffc107;font-style: italic;" class="text-center">
+      <tr>
+        <th>Section</th>
+        <th>Questions</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">Objective</td>
+        <td> <input type="number" class="table-input"  placeholder="Questions" min="0"></td>
+        <td><input type="number" class="table-input"  placeholder="Marks" min="0"></td>
+      </tr>
+      <tr>
+        <td class="text-center">Short</td>
+        <td> <input type="number" class="table-input"  placeholder="Questions" min="0"></td>
+        <td><input type="number" class="table-input"  placeholder="Marks" min="0"></td>
+      </tr>
+      <tr>
+        <td class="text-center">Brief</td>
+        <td> <input type="number" class="table-input"  placeholder="Questions" min="0"></td>
+        <td><input type="number" class="table-input"  placeholder="Marks" min="0"></td>
+      </tr>
+      <tr>
+        <td class="text-center">Long</td>
+        <td> <input type="number" class="table-input"  placeholder="Questions" min="0"></td>
+        <td><input type="number" class="table-input"  placeholder="Marks" min="0"></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+
+<!-- DIFFICULTY INPUT -->
+<div class="offset-md-1 col-md-4">
+  <div class="table-responsive">
+    <table class="table table-dark table-hover rounded-lg">
+     <thead style="color: #ffc107;font-style: italic;" class="text-center">
+      <tr>
+        <th>Difficulty</th>
+        <th>Percent %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">Easy</td>
+        <td><input type="number" class="table-input"  placeholder="Percent" min="0"></td>
+      </tr>
+      <tr>
+        <td class="text-center">Medium</td>
+        <td><input type="number" class="table-input"  placeholder="Percent" min="0"></td>
+      </tr>
+      <tr>
+        <td class="text-center">Hard</td>
+        <td><input type="number" class="table-input"  placeholder="Percent" min="0"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+</div>
+<hr>
+<div class="row mb-3">
+  <div class="offset-md-3 col-md-3">
+    <button class="btn bg-blue text-white"> <i class="fas fa-save pr-2"></i>Save Template</button>
+  </div>
+  <div class="offset-md-1 col-md-3">
+    <button class="btn bg-new text-white"> <i class="fas fa-cogs pr-2"></i>Generate Paper</button>
+  </div>
+</div>
+
+</form>
+</div>
+
+<div id="edit" class="tab-pane ml-3 mt-3">
+         <div class="row mt-3">
+               <div class="offset-md-4 col-md-6">
+                <div class="form-group form-inline">
+                  <label for="drafts">Saved Drafts:</label>
+                  <div class="input-group ml-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                       <i class="fas fa-graduation-cap"></i>
+                     </span>
+                   </div>
+                   <select class="form-control custom-select" id="drafts" >
+                    <option disabled>Select Drafts</option>
+                    <option>Draft 1</option>
+                    <option>Draft 2</option>  
+                    <option>Draft 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="offset-md-1 col-md-1">
+              <a class="badge badge-pill btn-danger p-2" data-balloon="Remove Draft" data-balloon-pos="left">
+               <i class="fas fa-trash-alt text-white"></i>
+             </a>
+           </div>
+         </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <h4><span>Objective</span></h4>
+    </div>
+  </div>
+  <hr>
+  <div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+    <span class="badge badge-pill btn-secondary hidden-control" data-balloon="Edit question" data-balloon-pos="right">
+      <i class="fas fa-pencil-alt text-white"></i>
+    </span>
+  </div>
+  <div class="col-md-10">
+    <span>Identify the parts of brain in below image :</span>
+    <div class="text-center"><img src="images/brain.png" class="rounded-lg" width="300" height="200"></div>
+  </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">1</span>
+  </div>
+</div>
+
+<div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+    </div>
+  <div class="col-md-10">
+    <span>What is known as "Power house of cell" ?</span>
+  </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">1</span>
+  </div>
+</div>
+
+<div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+    </div>
+  <div class="col-md-10">
+    <span>Which organ has double-layered membrane  ?</span>
+  </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">1</span>
+  </div>
+</div>
+
+ <div class="row mt-3 ">
+    <div class="col-md-12">
+      <h4><span>Short</span></h4>
+    </div>
+  </div>
+  <hr>
+  <div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+  </div>
+  <div class="col-md-10">
+    <span>Explain about kidney ?</span>
+   </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">2</span>
+  </div>
+</div>
+
+<div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+    </div>
+  <div class="col-md-10">
+    <span>Give details of nephron in short using below diagram.</span>
+    <div class="text-center"><img src="images/nephron.jpg" class="rounded-lg" width="300" height="200"></div>
+  </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">2</span>
+  </div>
+</div>
+
+<div class="row mb-3 question-item">
+    <div class="col-md-1">
+     <span class="badge badge-pill btn-warning hidden-control" data-balloon="Choose another question" data-balloon-pos="right">
+      <i class="fas fa-exchange-alt text-white"></i>
+    </span>
+        <span class="badge badge-pill btn-secondary hidden-control" data-balloon="Edit question" data-balloon-pos="right">
+      <i class="fas fa-pencil-alt text-white"></i>
+    </span>
+
+    </div>
+  <div class="col-md-10">
+    <span>Where is medula oblongata situated ?</span>
+  </div>
+  <div class="col-md-1">
+    <span class="badge bg-dark text-white p-1">2</span>
+  </div>
+</div>
+
+<hr>
+<div class="row mb-3 mt-3">
+  <div class="offset-md-3 col-md-3">
+    <button class="btn bg-blue text-white"> <i class="fas fa-save pr-2"></i>Save As Draft</button>
+  </div>
+  <div class="offset-md-1 col-md-3">
+    <button class="btn bg-new text-white"> <i class="fas fa-cogs pr-2"></i>Finalize Paper</button>
+  </div>
+</div>
+
+
+</div>
+
+<div id="view" class="tab-pane fade">
+  <h1>View Paper</h1>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>

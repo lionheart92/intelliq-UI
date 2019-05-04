@@ -1,0 +1,77 @@
+body{
+   background:#e9ecf3;
+}
+.header{
+	z-index: 1;
+}
+
+.sidenav {
+  margin-top: 65px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #515e63; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  z-index: 1;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+  margin-top: 8px;
+  padding: 20px 0px  20px 0px;
+  color: #ffffff;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffc107;
+}
+
+
+.main-content{
+   position: relative;
+   margin-top: 80px;
+   margin-bottom: 10px;
+   padding: 10px;
+   font-family:  sans-serif;
+}
+
+.feature-content{
+   position: relative;
+   margin-left: 220px;
+   padding: 10px;
+   font-family: sans-serif;
+}
+
+.footer-bg{
+	background-color: #b2bec3;
+  color: #f1f1f1!important;
+	z-index: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.bg-modify{
+  background-color: #f19066!important;
+ }
+
+ .bg-remove{
+  background-color: #ff7675!important;
+ }
+
+ .bg-new{
+  background-color: #00b894!important;
+ }
+
+ .bg-blue{
+  background-color: #007BFF!important;
+ }
