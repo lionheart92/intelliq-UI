@@ -38,7 +38,7 @@ body{
    margin-top: 80px;
    margin-bottom: 10px;
    padding: 10px;
-   font-family: sans-serif;
+   font-family:  sans-serif;
 }
 
 .feature-content{
@@ -60,3 +60,18 @@ body{
 }
 
 
+.bg-modify{
+  background-color: #f19066!important;
+ }
+
+ .bg-remove{
+  background-color: #ff7675!important;
+ }
+
+ .bg-new{
+  background-color: #00b894!important;
+ }
+
+ .bg-blue{
+  background-color: #007BFF!important;
+ }

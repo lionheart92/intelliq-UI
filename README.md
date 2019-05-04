@@ -1,3 +1,0 @@
-# intelliq-UI
-
-Html screens

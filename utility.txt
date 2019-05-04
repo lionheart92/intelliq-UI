@@ -20,3 +20,17 @@ Center Align
  font-italic
 
  text-center /justify
+
+
+rounded-lg : to round corners
+
+ Dark Header color : #343140
+ Side nav color : #515e63
+ Main Background : #e9ecf3
+ Yellow color text : #ffc107
+ Success bg color: #00b894
+ remove bg color: #ff7675
+ Modify Bg color: #f19066
+ Tab blue color: #007BFF
+ Pink : #E84393
+ Question Badge BG : #17a2b8
